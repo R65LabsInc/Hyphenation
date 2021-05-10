@@ -31,8 +31,8 @@ See full documentation at https://john-mueller.github.io/Hyphenation.
   s.ios.deployment_target = '13.0'
   s.swift_version = '4.2'
 
-  s.source_files = 'Sources/**/*'
-  s.resources = 'Hyphenation/Patterns/**'
+  s.source_files = 'Sources/**/*.swift'
+  s.resources = 'Hyphenation/Patterns/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   
