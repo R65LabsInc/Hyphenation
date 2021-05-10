@@ -33,9 +33,9 @@ See full documentation at https://john-mueller.github.io/Hyphenation.
 
   s.source_files = 'Sources/**/*'
   
-  # s.resource_bundles = {
-  #   'Tags' => ['Tags/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'Hyphenation' => ['Hyphenation/**/*.txt']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   

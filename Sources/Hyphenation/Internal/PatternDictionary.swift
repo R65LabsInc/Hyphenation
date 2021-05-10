@@ -84,10 +84,7 @@ internal final class PatternDictionary: Copyable {
 
 extension PatternDictionary {
     /// A URL refering to a file containing the default English patterns.
-    private static let defaultFileURL = URL(fileURLWithPath: #file)
-        .deletingLastPathComponent()
-        .deletingLastPathComponent()
-        .appendingPathComponent("Patterns/hyph-en-us.pat.txt")
+    private static let defaultFileURL = Bundle(for: PatternDictionary.self).resourceURL!.appendingPathComponent("Patterns/hyph-en-us.pat.txt")
 
     /// A `PatternDictionary` containing the default English patterns.
     private static var defaultDictionary = try! PatternDictionary(fileURL: defaultFileURL)
