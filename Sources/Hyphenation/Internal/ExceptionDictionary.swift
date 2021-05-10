@@ -135,10 +135,7 @@ extension ExceptionDictionary {
 
 extension ExceptionDictionary {
     /// A URL refering to a file containing the default English exceptions.
-    private static let defaultFileURL = URL(fileURLWithPath: #file)
-        .deletingLastPathComponent()
-        .deletingLastPathComponent()
-        .appendingPathComponent("Patterns/hyph-en-us.hyp.txt")
+    private static let defaultFileURL = Bundle(for: ExceptionDictionary.self).url(forResource: "hyph-en-us.hyp", withExtension: "txt")!
 
     /// An `ExceptionDictionary` containing the default English exceptions.
     private static var defaultDictionary = try! ExceptionDictionary(fileURL: defaultFileURL)
