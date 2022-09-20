@@ -24,7 +24,7 @@ See full documentation at https://john-mueller.github.io/Hyphenation.
                        DESC
 
   s.homepage         = 'https://github.com/R65LabsInc/Hyphenation'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT' }
   s.author           = { 'john-mueller' => 'john-mueller' }
   s.source           = { :git => 'https://github.com/R65LabsInc/Hyphenation.git', :tag => s.version.to_s }
   
